@@ -1,12 +1,16 @@
 header {
     background-color: #FDDFC3;
     margin: 0;
-    font-family: Helvetica, sans-serif;
     display: flex;
     justify-items: center;
     padding: 17px 35px 0 35px;
     align-items: center;
     justify-content: space-between;
+}
+
+h1, h2, h3, p, a{
+    font-family: Helvetica, sans-serif;
+    color: #262626;
 }
 
 header div {
@@ -50,10 +54,145 @@ header a.active {
 hr {
     border-bottom: solid #262626 2px;
     margin: 0;
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
 body {
     background-color: #FDDFC3;
     margin: 0;
 }
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 87px;
+}
+
+main div h1,h2,h3,p {
+    margin: 0;
+}
+
+main div {
+    padding-top: 60px;
+    max-width: 543px;
+}
+
+main div h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+main div h2 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+main div h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main div p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+main img {
+    padding: 15px 0;
+}
+
+main section {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta {
+    background-color: rgba(0,0,0,0);
+    border: solid #9B816B 3px;
+    color: #262626;
+    padding: 6px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #9B816B;
+    color: #FDDFC3;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.ig {
+    width: 42px;
+    height: 42px;
+    background-image: url("/images/instagram\ edit\ inverso.png");
+    display: inline-block;
+    padding: 0;
+ }
+
+ .ig:hover {
+    background-image: url("/images/instagram\ edit.png");
+ }
+
+ .tiktok {
+    width: 42px;
+    height: 42px;
+    background-image: url("/images/tiktok\ edit\ inverso.png");
+    display: inline-block;
+    padding: 0;
+ }
+
+ .tiktok:hover {
+    background-image: url("/images/tiktok\ edit.png");
+ }
+
+ .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: #262626;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 290px;
+    background-color: #9B816B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #FDDFC3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    text-decoration: underline;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
