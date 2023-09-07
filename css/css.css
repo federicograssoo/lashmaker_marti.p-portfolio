@@ -369,3 +369,32 @@ footer nav ul li:hover {
 .contact {
     gap: 18px;
 }
+
+.title h2 {
+    color: #9B816B;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.testo-servizio {
+    padding: 0;
+}
+
+.testo-servizio p {
+    padding-top: 30px;
+    line-height: 32px;
+    max-width: 803px;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 65px;
+    column-gap: 17px;
+    row-gap: 23px;
+}
+
+.images-grid img {
+    padding: 0;
+}
