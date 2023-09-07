@@ -1,0 +1,371 @@
+header {
+    background-color: #FDDFC3;
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    padding: 17px 35px 0 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1, h2, h3, p, a{
+    font-family: Helvetica, sans-serif;
+    color: #262626;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+header p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header a {
+    color: #262626;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav {
+    margin: 0;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 34px;
+    list-style-type: none;
+}
+
+header nav ul li:hover {
+    text-decoration: underline;
+}
+
+header a.active {
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: solid #262626 2px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+body {
+    background-color: #FDDFC3;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 87px;
+}
+
+main div h1,h2,h3,p {
+    margin: 0;
+}
+
+main div {
+    padding-top: 60px;
+}
+
+main div h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+main div h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+main div h3 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+main div p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+main img {
+    padding: 15px 0;
+}
+
+main section {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta {
+    background-color: rgba(0,0,0,0);
+    border: solid #9B816B 3px;
+    color: #262626;
+    padding: 6px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #9B816B;
+    color: #FDDFC3;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.ig {
+    width: 42px;
+    height: 42px;
+    background-image: url("/images/instagram\ edit\ inverso.png");
+    display: inline-block;
+    padding: 0;
+ }
+
+ .ig:hover {
+    background-image: url("/images/instagram\ edit.png");
+ }
+
+ .tiktok {
+    width: 42px;
+    height: 42px;
+    background-image: url("/images/tiktok\ edit\ inverso.png");
+    display: inline-block;
+    padding: 0;
+ }
+
+ .tiktok:hover {
+    background-image: url("/images/tiktok\ edit.png");
+ }
+
+ .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #262626;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .dropbtn-active {
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #262626;
+    background-color: inherit;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 290px;
+    background-color: #9B816B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #FDDFC3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    text-decoration: underline;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  main.no-flex {
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+  }
+
+  .cards-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .card {
+    width: fit-content;
+    background-color: #FBD4B3;
+    transition: transform 0.2s;
+    padding: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.card h2 {
+    padding: 16px 0 17px 20px;
+    font-size: 32px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0 30px 0;
+
+}
+
+footer a{
+    color: #9B816B;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 34px;
+    list-style-type: none;
+}
+
+
+footer nav ul li:hover {
+    text-decoration: underline;
+}
+
+.prezzo-servizio {
+    display: flex;
+    padding-top: 38px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.prezzo-servizio h2 {
+    font-size: 32px;
+    padding: 0;
+}
+
+.prezzo-servizio div {
+    display: flex;
+    padding: 0;
+    gap: 15px;
+}
+
+.prezzo-servizio h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #9B816B;
+    padding: 0;
+}
+
+.prezzo-servizio p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.divider {
+    border-bottom: solid #262626 2px;
+    margin: 0;
+    margin-top: 9px;
+}
+
+.text {
+    color: #353535;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 26px;
+}
+
+.chisono h2 {
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.chisono p {
+    padding-top: 30px;
+    line-height: 32px;
+}
+
+.chisono ul {
+    font-family: Helvetica, sans-serif;
+    color: #262626;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.propic {
+    padding: 144px 0 0 0;
+    height: 100%;
+}
+
+.contact h3{
+    font-weight: normal;
+    font-size: 24px;
+    max-width: 504px;
+    line-height: 32px;
+    padding: 30px 0 13px 0;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    gap: 13px;
+}
+
+.contact img {
+    padding: 0;
+}
+
+.contact {
+    gap: 18px;
+}
