@@ -151,13 +151,13 @@ a.fill-div {
  .tiktok {
     width: 42px;
     height: 42px;
-    background-image: url("/images/tiktok\ edit\ inverso.png");
+    background-image: url("../images/tiktok\ edit\ inverso.png");
     display: inline-block;
     padding: 0;
  }
 
  .tiktok:hover {
-    background-image: url("/images/tiktok\ edit.png");
+    background-image: url("../images/tiktok\ edit.png");
  }
 
  .dropdown .dropbtn {
