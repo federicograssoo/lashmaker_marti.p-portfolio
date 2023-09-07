@@ -139,13 +139,13 @@ a.fill-div {
 .ig {
     width: 42px;
     height: 42px;
-    background-image: url("images/instagram edit inverso.png");
+    background-image: url("../images/instagram\ edit\ inverso.png");
     display: inline-block;
     padding: 0;
  }
 
  .ig:hover {
-    background-image: url("images/instagram edit.png");
+    background-image: url("../images/instagram\ edit.png");
  }
 
  .tiktok {
