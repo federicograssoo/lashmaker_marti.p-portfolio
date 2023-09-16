@@ -55,11 +55,17 @@ hr {
     border-bottom: solid #262626 2px;
     margin: 0;
     margin-top: 15px;
+    width: 100%;
 }
 
 body {
     background-color: #FDDFC3;
     margin: 0;
+    overflow: hidden;
+}
+
+.body-scroll {
+    overflow-y: visible;
 }
 
 main {
@@ -250,7 +256,7 @@ a.fill-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 80px;
     gap: 30px;
 }
 
@@ -377,11 +383,11 @@ footer nav ul li:hover {
     padding-bottom: 30px;
 }
 
-.testo-servizio {
+.service-text {
     padding: 0;
 }
 
-.testo-servizio p {
+.service-text p {
     padding-top: 30px;
     line-height: 32px;
     max-width: 803px;
@@ -389,7 +395,7 @@ footer nav ul li:hover {
 
 .images-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: 65px;
     column-gap: 17px;
     row-gap: 23px;
@@ -397,4 +403,165 @@ footer nav ul li:hover {
 
 .images-grid img {
     padding: 0;
+}
+
+.last-contact-div {
+    padding-bottom: 150px;
+}
+
+.time-required {
+    font-size: 16px;
+    font-style: italic;
+    color: #9B816B;
+}
+
+.hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+  
+.hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #353535;
+}
+  
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+  
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+  
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+  
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+  
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+  
+.checkbox {
+    position: absolute;
+    display: none;
+    height: 32px;
+    width: 32px;
+    top: 16x;
+    right: 16px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .checkbox {
+      display: block;
+    }
+
+     .header-nav ul {
+      gap: 10px;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: rgba(155,129,107,0.9);
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .dropdown {
+     justify-content: center;
+     text-align: center;
+    }
+  
+    input[type="checkbox"]:checked ~  nav ul {
+      opacity: 100;
+    }
+  
+    .hamburger-lines {
+      opacity: 100;
+    }
+  
+    ul li {
+      display: block;
+    }
+  
+     .submenu {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding: 10px 0;
+      margin: 0;
+     }
+
+    main {
+        display: block;
+        margin: auto;
+        max-width: 650px;
+    }
+
+    main section {
+        justify-content: center;
+        padding: 50px 0;
+        display: none;
+
+    }
+
+    .home-img {
+        display: block;
+        margin: auto;
+        min-width: 650px;
+        padding-top: 36px;
+    }
+
+    main.no-flex {
+        max-width: 650px;
+        margin: auto;
+        display: block;
+    }
+    
+    .cards-group {
+        grid-template-columns: 1fr;
+    }
+
+    img.propic {
+        padding-top: 10px;
+    }
+
+    .last-contact-div {
+        padding-bottom: 50px;
+    }
+
+    .images-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .images-grid img {
+        margin: auto;
+    }
 }
