@@ -451,7 +451,7 @@ footer nav ul li:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 990px) {
     .checkbox {
       display: block;
     }
