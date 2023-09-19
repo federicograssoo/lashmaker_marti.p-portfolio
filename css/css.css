@@ -415,54 +415,30 @@ footer nav ul li:hover {
     color: #9B816B;
 }
 
-.hamburger-lines {
+.more-button {
     display: block;
-    height: 26px;
-    width: 32px;
     position: absolute;
-    top: 18px;
-    right: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 32px;
+    width: 32px;
+    top: 32px;
+    right: 16px;
+    z-index: 5;
+    pointer-events: none;
     opacity: 0;
 }
-  
-.hamburger-lines .line {
+
+.close-button {
     display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #353535;
-}
-  
-.hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 32px;
+    right: 16px;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
 }
 
-.hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-}
-  
-.hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-}
-  
-input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-    transform: rotate(45deg);
-}
-  
-input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-    transform: scaleY(0);
-}
-  
-input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-    transform: rotate(-45deg);
-}
-  
 .checkbox {
     position: absolute;
     display: none;
@@ -499,12 +475,20 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
      text-align: center;
     }
   
-    input[type="checkbox"]:checked ~  nav ul {
-      opacity: 100;
-    }
-  
-    .hamburger-lines {
+    .more-button {
       opacity: 1;
+    }
+
+    input[type="checkbox"]:checked ~  .more-button {
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked ~  .close-button {
+        opacity: 1;
+    }
+
+    input[type="checkbox"]:checked ~  nav ul {
+        opacity: 100;
     }
   
     ul li {
@@ -517,11 +501,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
       position: relative;
       padding: 10px 0;
       margin: 0;
-    }
-
-    body {
-        overflow: visible;
-    }
+     }
 
     main {
         display: block;
